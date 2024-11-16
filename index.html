@@ -4,72 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Sabonetes Vovó Cambinda</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <div class="container">
-            <img src="/img/soap.png" alt="icon" class="icon">   <h1>Loja de Sabonetes Vovó Cambinda</h1>
-            <p>Descubra nossos produtos exclusivos para limpeza e cuidado pessoal</p>
+            <img src="/img/soap.png" alt="icon" class="icon">   
+            <h1>Loja de Sabonetes Vovó Cambinda</h1>
+            <p>Descubra nossos produtos exclusivos para limpeza e cuidado pessoal</p><br>
             <a href="#produtos" class="cta-button">Ver Produtos</a>
         </div>
     </header>
 
-    <!-- Seção de Produtos -->
-    <section id="produtos" class="produtos">
+    <!-- Seção de Carrossel -->
+    <section id="produtos" class="carrossel">
         <h2>Produtos em Destaque</h2>
-        <div class="produtos-grid">
-            <!-- Produto 1 -->
-            <div class="produto-card">
-                <img src="/img/ean7896512909770_0130_1.webp" alt="Sabonete Artesanal">
-                <h3>Sabonete Artesanal</h3>
-                <p>Feito com ingredientes naturais para sua pele.</p>
-                <span class="preco">R$ 15,00</span>
-                <button class="comprar-button">Comprar</button>
+        <div class="carrossel-container">
+            <button class="carrossel-btn prev" onclick="moverCarrossel(-1)">&#10094;</button>
+            <div class="carrossel-items">
+                <div class="carrossel-item">
+                    <img src="/img/ean7896512909770_0130_1.webp" alt="Sabonete Artesanal">
+                    <h3>Sabonete Artesanal</h3>
+                </div>
+                <div class="carrossel-item">
+                    <img src="/img/71ECuJ8sqdL._AC_SL520_.jpg" alt="Detergente">
+                    <h3>Detergente Concentrado</h3>
+                </div>
+                <div class="carrossel-item">
+                    <img src="/img/sabonetes-2.webp" alt="Limpador Multiuso">
+                    <h3>Limpador Multiuso</h3>
+                </div>
             </div>
-            <!-- Produto 2 -->
-            <div class="produto-card">
-                <img src="/img/71ECuJ8sqdL._AC_SL520_.jpg" alt="Detergente">
-                <h3>Detergente Concentrado</h3>
-                <p>Eficiência máxima para louças brilhantes.</p>
-                <span class="preco">R$ 10,00</span>
-                <button class="comprar-button">Comprar</button>
-            </div>
-            <!-- Produto 3 -->
-            <div class="produto-card">
-                <img src="/img/sabonetes-2.webp" alt="Limpador Multiuso">
-                <h3>Limpador Multiuso</h3>
-                <p>Ideal para qualquer ambiente da sua casa.</p>
-                <span class="preco">R$ 20,00</span>
-                <button class="comprar-button">Comprar</button>
-            </div>
+            <button class="carrossel-btn next" onclick="moverCarrossel(1)">&#10095;</button>
         </div>
     </section>
+    <section>
+        <h1>Quem nós somos?</h1>
+        <h3>Duas irmãs querendo levar seu sabontes para ajudar as pessoas com seus problemas espirituais e higiene pessoal </h3>
 
-    <!-- Seção de Benefícios -->
-    <section class="beneficios">
-        <h2>Por que escolher nossos produtos?</h2>
-        <div class="beneficios-grid">
-            <div class="beneficio-item">
-                <img src="natural.svg" alt="Natural">
-                <h3>Ingredientes Naturais</h3>
-                <p>Produtos seguros e sustentáveis.</p>
-            </div><br>
-            <div class="beneficio-item">
-                <img src="qualidade.svg" alt="Qualidade">
-                <h3>Alta Qualidade</h3>
-                <p>Garantia de resultados excelentes.</p>
-            </div>
-            
-        </div>
+    <img src="/img/soap.png" alt="Irmãs" class="irmas">
     </section>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Sua Loja de Limpeza. Todos os direitos reservados.</p> 
-        
     </footer>
-    <link rel="stylesheet" href="/style.css">
+
+    <script src="script.js"></script>
 </body>
 </html>
